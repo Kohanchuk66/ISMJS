@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<script>
+    let login = prompt( "Enter the login", "" );
+
+    if( login == "Админ" ){
+        let password = prompt( "Enter the password", "" );
+
+        if ( password == "Я главный" ){
+            alert("Здравствуйте!");
+        }
+        else if ( password == null || password == ""){
+            alert( "Отменено" );
+        }
+        else {
+            alert( "Неверный пароль" );
+        }
+    }
+    else if ( login == null || login == ""){
+        alert( "Отменено" );
+    }
+    else {
+        alert( "Я вас не знаю" );
+    }
+</script>
+<body>
+
+</body>
+</html>
